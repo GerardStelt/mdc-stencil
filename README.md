@@ -1,2 +1,2 @@
-# mdc-stencil
-Material Web Components - Material Design implemented as Web Components with StencilJS
+# Material Web Components
+Material Web Components with StencilJS helps developers execute Material Design using web components.
