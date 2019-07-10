@@ -21,7 +21,11 @@
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "devDependencies": {
-    "@stencil/core": "^1.0.7"
+    "@material/button": "^3.0.0",
+    "@material/ripple": "^3.0.0",
+    "@material/textfield": "^3.0.0",
+    "@stencil/core": "^1.0.7",
+    "@stencil/sass": "^1.0.1"
   },
   "license": "MIT",
   "dependencies": {}

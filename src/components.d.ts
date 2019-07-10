@@ -17,6 +17,7 @@ export namespace Components {
   interface MdDialogHeader {
     'title': string;
   }
+  interface MdcTextfield {}
 }
 
 declare global {
@@ -45,11 +46,18 @@ declare global {
     prototype: HTMLMdDialogHeaderElement;
     new (): HTMLMdDialogHeaderElement;
   };
+
+  interface HTMLMdcTextfieldElement extends Components.MdcTextfield, HTMLStencilElement {}
+  var HTMLMdcTextfieldElement: {
+    prototype: HTMLMdcTextfieldElement;
+    new (): HTMLMdcTextfieldElement;
+  };
   interface HTMLElementTagNameMap {
     'md-button-flat': HTMLMdButtonFlatElement;
     'md-dialog': HTMLMdDialogElement;
     'md-dialog-footer': HTMLMdDialogFooterElement;
     'md-dialog-header': HTMLMdDialogHeaderElement;
+    'mdc-textfield': HTMLMdcTextfieldElement;
   }
 }
 
@@ -62,12 +70,14 @@ declare namespace LocalJSX {
   interface MdDialogHeader extends JSXBase.HTMLAttributes<HTMLMdDialogHeaderElement> {
     'title'?: string;
   }
+  interface MdcTextfield extends JSXBase.HTMLAttributes<HTMLMdcTextfieldElement> {}
 
   interface IntrinsicElements {
     'md-button-flat': MdButtonFlat;
     'md-dialog': MdDialog;
     'md-dialog-footer': MdDialogFooter;
     'md-dialog-header': MdDialogHeader;
+    'mdc-textfield': MdcTextfield;
   }
 }
 
